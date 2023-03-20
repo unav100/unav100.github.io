@@ -74,8 +74,8 @@
                     <!-- </div> -->
                     <!-- <div class="col" style="padding-top: 0.7rem"> -->
                         <p class="lead">
-                            We contribute a large-scale UnAV-100 dataset as the first audio-visual dataset based on untrimmed videos. Different from the previous <a href="https://sites.google.com/view/audiovisualresearch">AVE </a> dataset that only contains a single event in each trimmed clip, our UnAV-100 consists of more than 
-                            <strong>10K</strong> untrimmed videos with over <strong>30K<strong> audio-visual events covering 100 different event categories. 
+                            We contribute a large-scale UnAV-100 dataset as the first audio-visual dataset based on untrimmed videos. Different from the previous <a class="paper-sub" href="https://sites.google.com/view/audiovisualresearch">AVE </a> dataset that only contains a single event in each trimmed clip, our UnAV-100 consists of more than 
+                            <strong>10K</strong> untrimmed videos with over <strong>30K</strong> audio-visual events covering 100 different event categories. 
                             There are often multiple audio-visual events that might be very short or long, and occur concurrently in our UnAV-100 like real-life audio-visual scenes.
                             We believe that the UnAV-100 dataset, with its realistic complexity, can promote the exploration on comprehensive audio-visual video understanding.
                         </p>
@@ -87,12 +87,12 @@
         <section class="page-section text-dark mb-0" id="statistics">
             <div class="container">
                 <!-- Section Heading-->
-                <h2 class="page-section-heading text-dark">Statistics</h2>
+                <h3 class="page-section-heading text-dark">Statistics</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light"></div>
                 <!-- Section Content-->
                 <div class="row" style="margin-top: 1.7rem">
-                    <div class="col-lg-12 ml-auto" style="margin-top: 1rem"><p class="lead">ACAV100M is an automatically curated dataset of 10-seconds clips with high audio-visual correspondence. We provide the categorization results of the clips using pretrained audio (AudioSet), video (Kinetics400) and image (ImageNet) classifiers.</p></div>
+                    <!-- <div class="col-lg-12 ml-auto" style="margin-top: 1rem"><p class="lead">UnAV-100 is an automatically curated dataset of 10-seconds clips with high audio-visual correspondence. We provide the categorization results of the clips using pretrained audio (AudioSet), video (Kinetics400) and image (ImageNet) classifiers.</p></div> -->
                 </div>
                 <div class="row" style="text-align: center">
                     <div class="col-lg-12 ml-auto" style="margin-top: 1rem"><p class="lead figure-head">High Level Audio Labels (AudioSet)</p></div>
@@ -115,39 +115,6 @@
                     <!-- .col-lg-12.ml-auto-->
                     <!--     a(href='assets/img/figures/top_5_image_labels.pdf')-->
                     <!--         img.figure(src='assets/img/figures/top_5_image_labels.png', alt='', width='100%')-->
-                </div>
-            </div>
-        </section>
-        <!-- Download Section-->
-        <section class="page-section text-dark mb-0" id="downloads">
-            <div class="container download">
-                <!-- Download Section Heading-->
-                <h2 class="page-section-heading text-dark">Downloads</h2>
-                <div class="divider-custom divider-light"></div>
-                <div class="row" style="margin-top: 1.7rem">
-                    <div class="col-lg-12 ml-auto" style="margin-top: 1rem"><p class="lead">We provide five curated datasets of different scales; all the videos are 10-seconds long. The datasets are automatically constructed using our approach (using the clustering-based approach with 500 cluster centroids).</p></div>
-                    <div class="col-lg-12 ml-auto" style="padding-top: 0.7rem"><p class="lead">Each dataset contains YouTube ID and start second in a CSV format:</p></div>
-                    <div class="col-lg-12 ml-auto"><p class="data-structure"># YouTube ID, start second</p></div>
-                </div>
-                <div class="row" style="margin-top: 0rem; text-align: center">
-                    <div class="col-lg-6 ml-auto" style="padding-top: 1rem">
-                        <p class="lead download_sub" style="margin-bottom: 2rem; font-weight: bold">Dataset</p>
-                        <ul style="text-align: justify; margin: auto; width: 70%">
-                            <li class="lead" style="margin-bottom: 0; font-weight: bold"><a class="dataset" href="https://mega.nz/file/3AhUiQpY#xKfft2V0bXn30JCy2bclWpKHHR7K8Oubs501xlAuyIo">20K (2 days)</a></li>
-                            <li class="lead" style="margin-bottom: 0; font-weight: bold"><a class="dataset" href="https://mega.nz/file/TUhQ0I4Q#K6L1Qkh4idVHpXYM868TbupaueFzHD2JJMZXVHozGfo">200K (23 days)</a></li>
-                            <li class="lead" style="margin-bottom: 0; font-weight: bold"><a class="dataset" href="https://mega.nz/file/zYh2xArA#cyolGIjFqBo8FzMEf3mdCZVRPFrW0I5B22hlTIE7R-0">2M (8 months)</a></li>
-                            <li class="lead" style="margin-bottom: 0; font-weight: bold"><a class="dataset" href="https://mega.nz/file/PEpkGA5Q#Eo8yKYIutH6zbLRozjSoE6AvrbFftf2vWF0tzwk56-k">10M (3 years)</a></li>
-                            <li class="lead" style="margin-bottom: 0; font-weight: bold"><a class="dataset" href="https://mega.nz/file/OI5wiBbK#E9GxPyjQkRU1xl8ttlE7Pi4t4pAM46h-Kz1SdtAFBjs">100M (31 years)</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6 ml-auto" style="margin-top: 1rem">
-                        <p class="lead download_sub" style="margin-bottom: 2rem; font-weight: bold">Code</p>
-                        <a class="paper-sub" style="margin-top: 4rem; display: block" href="https://github.com/sangho-vision/acav100m"><img src="assets/img/GitHub-Mark-120px-plus.png" /></a>
-                    </div>
-                </div>
-                <div class="row" style="margin-top: 0rem; text-align: center">
-                    <div class="col-lg-6 ml-auto" style="margin-top: 1rem"><p class="lead" style="margin-top: 2rem; font-weight: bold">Number of video clips (total duration)</p></div>
-                    <div class="col-lg-6 ml-auto" style="margin-top: 1rem"><p class="lead" style="margin-top: 2rem; font-weight: bold">Data curation pipeline and evaluation scripts</p></div>
                 </div>
             </div>
         </section>
@@ -185,13 +152,46 @@
                 </div>
             </div>
         </section>
-        <section class="page-section text-dark mb-0" id="presentation">
+        <!-- <section class="page-section text-dark mb-0" id="presentation">
             <div class="container">
                 <h2 class="page-section-heading text-dark">Presentation</h2>
                 <div class="divider-custom divider-light"></div>
                 <div class="row" style="margin-top: 1.7rem">
                     <div class="col-lg-12 ml-auto embed_container"><iframe class="embeded" src="https://www.youtube.com/embed/VR0eh0iVH8Q" title="ACAV100M presentation video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     <!-- <div class="col-lg-12 ml-auto embed_container" style="margin-top: 2rem"><embed class="embeded" src="assets/presentation/presentation_slides.pdf" type="application/pdf" /></div> -->
+                <!-- </div> --> 
+            <!-- </div> -->
+        <!-- </section> -->
+        <!-- Download Section-->
+        <section class="page-section text-dark mb-0" id="downloads">
+            <div class="container download">
+                <!-- Download Section Heading-->
+                <h2 class="page-section-heading text-dark">Downloads</h2>
+                <div class="divider-custom divider-light"></div>
+                <div class="row" style="margin-top: 1.7rem">
+                    <div class="col-lg-12 ml-auto" style="margin-top: 1rem"><p class="lead">We provide five curated datasets of different scales; all the videos are 10-seconds long. The datasets are automatically constructed using our approach (using the clustering-based approach with 500 cluster centroids).</p></div>
+                    <div class="col-lg-12 ml-auto" style="padding-top: 0.7rem"><p class="lead">Each dataset contains YouTube ID and start second in a CSV format:</p></div>
+                    <div class="col-lg-12 ml-auto"><p class="data-structure"># YouTube ID, start second</p></div>
+                </div>
+                <div class="row" style="margin-top: 0rem; text-align: center">
+                    <div class="col-lg-6 ml-auto" style="padding-top: 1rem">
+                        <p class="lead download_sub" style="margin-bottom: 2rem; font-weight: bold">Dataset</p>
+                        <ul style="text-align: justify; margin: auto; width: 70%">
+                            <li class="lead" style="margin-bottom: 0; font-weight: bold"><a class="dataset" href="https://mega.nz/file/3AhUiQpY#xKfft2V0bXn30JCy2bclWpKHHR7K8Oubs501xlAuyIo">20K (2 days)</a></li>
+                            <li class="lead" style="margin-bottom: 0; font-weight: bold"><a class="dataset" href="https://mega.nz/file/TUhQ0I4Q#K6L1Qkh4idVHpXYM868TbupaueFzHD2JJMZXVHozGfo">200K (23 days)</a></li>
+                            <li class="lead" style="margin-bottom: 0; font-weight: bold"><a class="dataset" href="https://mega.nz/file/zYh2xArA#cyolGIjFqBo8FzMEf3mdCZVRPFrW0I5B22hlTIE7R-0">2M (8 months)</a></li>
+                            <li class="lead" style="margin-bottom: 0; font-weight: bold"><a class="dataset" href="https://mega.nz/file/PEpkGA5Q#Eo8yKYIutH6zbLRozjSoE6AvrbFftf2vWF0tzwk56-k">10M (3 years)</a></li>
+                            <li class="lead" style="margin-bottom: 0; font-weight: bold"><a class="dataset" href="https://mega.nz/file/OI5wiBbK#E9GxPyjQkRU1xl8ttlE7Pi4t4pAM46h-Kz1SdtAFBjs">100M (31 years)</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 ml-auto" style="margin-top: 1rem">
+                        <p class="lead download_sub" style="margin-bottom: 2rem; font-weight: bold">Code</p>
+                        <a class="paper-sub" style="margin-top: 4rem; display: block" href="https://github.com/sangho-vision/acav100m"><img src="assets/img/GitHub-Mark-120px-plus.png" /></a>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 0rem; text-align: center">
+                    <div class="col-lg-6 ml-auto" style="margin-top: 1rem"><p class="lead" style="margin-top: 2rem; font-weight: bold">Number of video clips (total duration)</p></div>
+                    <div class="col-lg-6 ml-auto" style="margin-top: 1rem"><p class="lead" style="margin-top: 2rem; font-weight: bold">Data curation pipeline and evaluation scripts</p></div>
                 </div>
             </div>
         </section>
